@@ -1,0 +1,226 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="../CSS/Products.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div id="wrapper">
+		 
+	<div id="Navigation">
+		 <a href="Home.html"> Home</a>
+		 <a href="About.html"> About</a>
+		 <a href="Contact.html"> Contact</a>
+		
+		
+  </div>
+		
+	
+		
+		
+		<section class="container content-section">
+            <h2 class="section-header">PRODUCTS</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Romantic Embellished Boho Scarf wrap. With Merino wool. Freeform Crochet Hand spun art yarn. Shabby chic shawl. OOAK. Hand Made In Australia.</span>
+                 <img class="shop-item-image" src="../Media/il_794xN.3418154900_8pkv.jpg" alt="pic1" > 
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$135.68</span>
+                      <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Fluffy soft Freeform crochet Hat. Made With My Hand spun art yarn. OOAK Wearable Art.Soft Merino wool. Hand made. Unique forest fairy hat.</span>
+                    <img class="shop-item-image" src="../Media/il_794xN.3172984894_l6fc.jpg" alt="pic2">
+					
+                    <div class="shop-item-details">
+                      <span class="shop-item-price">$66.69</span>
+                    <button class="btn btn-primary shop-item-button" type="button"> ADD TO CART </button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Freeform Knit Hat. Made With My Hand spun art yarn. OOAK Wearable Art.Soft Merino wool. Soft Mixed wool. Hand made. Unique forest fairy hat.</span>
+                    <img class="shop-item-image" src="../Media/il_794xN.3390899849_829f.jpg" alt="pic3">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$108.92</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Wolf Woman Hood! Woodland Folk Tree Nymph Felted Pixie Fairy Hood Hat. Woodland Goddess. OOAK Wearable Art. Soft Merino wool.Wet Felted Hat.</span>
+                    <img class="shop-item-image" src="../Media/il_794xN.1301576436_51u2.jpg" alt="pic4">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$126.49</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container content-section">
+           
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Fluffy soft Woodland animal Freeform crochet Hat. OOAK Wearable Art. Soft wool. Hand made. Unique forest fairy hat.</span>
+                    <img class="shop-item-image" src="../Media/il_794xN.3190464438_5z34.jpg" alt="pic5">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$177.81</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Toadstool Woodland Folk Nymph Felted Pixie Fairy Hood. Magical Toadstool Mushroom hat. Soft Merino wool. Red and white.</span>
+                    <img class="shop-item-image" src="../Media/il_794xN.2441884747_gbtz.jpg" alt="pic6">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$277.38</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        </section>
+		
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.btn {
+  background-color: #f4511e;
+  border: none;
+  color: white;
+
+  text-align: center;
+  font-size: 16px;
+  margin: 2px 2px;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.btn:hover {opacity: 0.6}
+</style>
+
+<script>if (document.readyState == 'loading') {
+    document.addEventListener('DOMContentLoaded', ready)
+} else {
+    ready()
+}
+
+function ready() {
+    var removeCartItemButtons = document.getElementsByClassName('btn-danger')
+    for (var i = 0; i < removeCartItemButtons.length; i++) {
+        var button = removeCartItemButtons[i]
+        button.addEventListener('click', removeCartItem)
+    }
+
+    var quantityInputs = document.getElementsByClassName('cart-quantity-input')
+    for (var i = 0; i < quantityInputs.length; i++) {
+        var input = quantityInputs[i]
+        input.addEventListener('change', quantityChanged)
+    }
+
+    var addToCartButtons = document.getElementsByClassName('shop-item-button')
+    for (var i = 0; i < addToCartButtons.length; i++) {
+        var button = addToCartButtons[i]
+        button.addEventListener('click', addToCartClicked)
+    }
+
+    document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
+}
+
+function purchaseClicked() {
+    alert('Thank you for your purchase')
+    var cartItems = document.getElementsByClassName('cart-items')[0]
+    while (cartItems.hasChildNodes()) {
+        cartItems.removeChild(cartItems.firstChild)
+    }
+    updateCartTotal()
+}
+
+function removeCartItem(event) {
+    var buttonClicked = event.target
+    buttonClicked.parentElement.parentElement.remove()
+    updateCartTotal()
+}
+
+function quantityChanged(event) {
+    var input = event.target
+    if (isNaN(input.value) || input.value <= 0) {
+        input.value = 1
+    }
+    updateCartTotal()
+}
+
+function addToCartClicked(event) {
+    var button = event.target
+    var shopItem = button.parentElement.parentElement
+    var title = shopItem.getElementsByClassName('shop-item-title')[0].innerText
+    var price = shopItem.getElementsByClassName('shop-item-price')[0].innerText
+    var imageSrc = shopItem.getElementsByClassName('shop-item-image')[0].src
+    addItemToCart(title, price, imageSrc)
+    updateCartTotal()
+}
+
+function addItemToCart(title, price, imageSrc) {
+    var cartRow = document.createElement('div')
+    cartRow.classList.add('cart-row')
+    var cartItems = document.getElementsByClassName('cart-items')[0]
+    var cartItemNames = cartItems.getElementsByClassName('cart-item-title')
+    for (var i = 0; i < cartItemNames.length; i++) {
+        if (cartItemNames[i].innerText == title) {
+            alert('This item is already added to the cart')
+            return
+        }
+    }
+    var cartRowContents = `
+        <div class="cart-item cart-column">
+            <img class="cart-item-image" src="${imageSrc}" width="100" height="100">
+            <span class="cart-item-title">${title}</span>
+        </div>
+        <span class="cart-price cart-column">${price}</span>
+        <div class="cart-quantity cart-column">
+            <input class="cart-quantity-input" type="number" value="1">
+            <button class="btn btn-danger" type="button">REMOVE</button>
+        </div>`
+    cartRow.innerHTML = cartRowContents
+    cartItems.append(cartRow)
+    cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem)
+    cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChanged)
+}
+
+function updateCartTotal() {
+    var cartItemContainer = document.getElementsByClassName('cart-items')[0]
+    var cartRows = cartItemContainer.getElementsByClassName('cart-row')
+    var total = 0
+    for (var i = 0; i < cartRows.length; i++) {
+        var cartRow = cartRows[i]
+        var priceElement = cartRow.getElementsByClassName('cart-price')[0]
+        var quantityElement = cartRow.getElementsByClassName('cart-quantity-input')[0]
+        var price = parseFloat(priceElement.innerText.replace('$', ''))
+        var quantity = quantityElement.value
+        total = total + (price * quantity)
+    }
+    total = Math.round(total * 100) / 100
+    document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
+}
+		
+</script>
+
+
+	
+	</div>
+</body>
+</html>

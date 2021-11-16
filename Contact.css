@@ -1,0 +1,17 @@
+/* CSS Document */
+
+body {background: #56979F}
+
+#wrapper {
+	background: #FFFFFF;
+	margin: 0 auto; 
+	width: 1080px;
+}
+#Navigation {clear: both;background: #000000}
+#Navigation ul {padding: 5px; margin: 0; border-top: 5px #000}
+#Navigation ul li {display: inline; list-style-type: none; margin: 0px 50px 0px 0px;}
+#Navigation a:link {font-weight: bold; text-decoration: none; text-transform: uppercase; color: #FFFFFF;padding: 10px}
+#Navigation a:visited {font-weight: bold; text-decoration: none; text-transform: uppercase; color: #FFFFFF;}
+#Navigation a:active {font-weight: bold; text-decoration: none; text-transform: uppercase; color: #FFFFFF;}
+#Navigation a:hover {font-weight: bold; text-decoration: none; text-transform: uppercase; color: #2650C0;}
+#Navigation a:click {font-weight: bold; text-decoration: none; text-transform:full-width; color: #000;}
